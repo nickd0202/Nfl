@@ -1,16 +1,36 @@
-# React + Vite
+# NFL Matchup Planner
+A clean and responsive React dashboard for viewing NFL game schedules, live scores, and detailed player matchups. This app fetches all data in real-time from the public ESPN API.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+(You should add a screenshot here!) [Insert a screenshot of the main schedule view and the modal open]
 
-Currently, two official plugins are available:
+## Features
+Current Week: Automatically fetches and displays the current week of the NFL season on load.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Schedule Browser: View the schedule for any week, year, or season type (Preseason, Regular, Postseason).
 
-## React Compiler
+### Game Cards:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+For upcoming games, shows betting odds and network broadcast information.
 
-## Expanding the ESLint configuration
+For completed games, shows the final score and highlights the winner.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Detailed Matchup Modal: Clicking a game card opens a modal with in-depth information:
+
+Broadcasts: A clean list of TV networks and streaming suggestions.
+
+Odds / Score: Shows betting odds for future games or the final score for past games.
+
+Player Matchups: A side-by-side comparison of team season leaders (Passing, Rushing, Receiving).
+
+Injuries: A full, up-to-date injury report for both teams, including player, position, status, and injury details.
+
+Responsive Design: The layout is fully responsive and works cleanly on both desktop and mobile devices.
+
+### Tech Stack
+Frontend: React (Vite)
+
+Data: Live data from the ESPN Site API
+
+Styling: Modern CSS with CSS Variables
+
+Dependencies: react, react-dom, @fontsource-variable/inter
